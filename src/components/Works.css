@@ -1,0 +1,82 @@
+.works__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.works__head {
+    text-align: center;
+    line-height: 0.89;
+}
+
+.works__head span {
+    font-size: 0.89rem;
+}
+
+
+.works__display {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px;
+    max-width: 50%;
+    margin: auto;
+}
+
+.works__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+
+}
+
+.details {
+    max-width: 45%;
+    margin-left: 40px;
+}
+
+.works__content img {
+    width: 45%;
+    height: 30%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+.dots {
+    display: flex;
+}
+
+.dots span {
+    background-color: #6e57e0;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    display: block;
+    margin: 5px;
+}
+
+.dim {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    /* Dimmed color for inactive dots */
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.active {
+    background-color: #6e57e0;
+    /* Active color for the active dot */
+}
+
+@media (max-width:980px) {
+    .works__display {
+        max-width: 100%;
+        padding: 30px 22px;
+    }
+}

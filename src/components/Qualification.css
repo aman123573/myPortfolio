@@ -1,0 +1,220 @@
+/* Qualification Section Styles */
+.qualification__tabs {
+    display: flex;
+    justify-content: center;
+    /* Center the tabs horizontally */
+    margin-bottom: 30px;
+}
+
+.qualification__button {
+    cursor: pointer;
+    padding: 15px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.qualification__button:hover {
+    border-color: #6e57e0;
+}
+
+.qualification__container {
+    max-width: 1200px;
+    /* Limit the width of the container */
+    margin: 30px auto;
+    /* Center the container horizontally */
+}
+
+.qualification__head {
+    text-align: center;
+    line-height: 0.89;
+}
+
+.qualification__head span {
+    font-size: 0.89rem;
+}
+
+.qualification__section {
+    margin-top: 100px;
+}
+
+.qualification__sections {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+/* for the vertical line */
+.qualification__sections::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #6e57e0;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.qualification__content {
+    display: none;
+    max-width: 800px;
+    /* Limit the width of the content */
+
+}
+
+.qualification__content.qualification__active {
+    /* display: block; */
+    position: relative;
+    width: 45%;
+    padding: 23px 30px;
+    /* background-color: #000; */
+
+}
+
+.left_content {
+    left: 0;
+}
+
+.right_content {
+    left: 50%;
+}
+
+.qualification__data {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin-bottom: 20px; */
+    position: relative;
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    padding: 23px;
+    right: -130px;
+}
+
+.right_content .qualification__data {
+    left: 0px;
+}
+
+
+
+.qualification__title {
+    margin-bottom: 5px;
+}
+
+.qualification__subtitle {
+    font-size: 14px;
+    color: #777;
+}
+
+.qualification__calender {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.qualification__rounder {
+    position: absolute;
+    top: 85px;
+    right: -20px;
+    z-index: 10;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #6e57e0;
+    border-radius: 50%;
+    /*  margin-right: 10px; */
+}
+
+.right_content .qualification__rounder {
+    left: -20px;
+}
+
+
+/* .qualification__line {
+    display: inline-block;
+    position: absolute;
+    flex: 1;
+    height: 100%;
+    background-color: #6e57e0;
+    margin: 0 10px;
+    width: 4px;
+    right: -13px
+} 
+
+.right_content .qualification__line{
+    left: -11px;
+} */
+
+
+/* Active State Styles */
+.qualification__active {
+    display: block;
+}
+
+.qualification__button.qualification__active {
+    border-color: #6e57e0;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1285px) {
+    .qualification__section {
+        margin-top: 40px;
+    }
+
+    .qualification__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .qualification__sections {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        margin: none;
+    }
+
+    .qualification__sections::after {
+        content: none;
+    }
+
+    .qualification__tabs {
+        flex-direction: column;
+        align-items: center;
+        /* Center the tabs vertically */
+    }
+
+    .qualification__button {
+        width: 64%;
+        margin-bottom: 10px;
+    }
+
+    .qualification__rounder {
+        display: none;
+    }
+
+    .right_content {
+        left: 0;
+    }
+
+    .qualification__data {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #a08ff6;
+        background-color: #a08ff6;
+        right: 0;
+        min-width: 60vw;
+    }
+    .qualification__content{
+        width: 0;
+    }
+    .qualification__content.qualification__active{
+        width: auto;
+    }
+}

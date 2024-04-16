@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaijaan+2:wght@500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.navbar-section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aquamarine; */
+    height: 10vh;
+    /* width: 100%; */
+    z-index: 20;
+    position: relative;
+    padding: 0 30px;
+    transition: all 0.18s ease-in;
+}
+
+.hamburger {
+    display: none;
+}
+
+.dark-mode {
+    background-color: #04222b;
+    color: #fff;
+    /* White text color */
+    /* overflow: hidden; */
+}
+
+/* Light Mode Styles */
+.light-mode {
+    background-color: #fff;
+    color: #333;
+    /* Dark text color */
+    /* overflow: hidden; */
+}
+
+.black-color {
+    color: #6e57e0;
+}
+
+.light-color {
+    color: #000;
+}
+
+.sticky {
+    position: sticky;
+    top: 1%;
+    /* width: 100%; */
+    padding: 0 40px;
+    margin: auto;
+    max-width: 90%;
+    background-color: #a08ff6;
+    border: none;
+    border-radius: 15px;
+}
+
+.left h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    cursor: pointer;
+    /* transition: all 1s ease-in-out; */
+}
+
+/* For hover effect on h2 of left */
+.left h2::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background: #6e57e0;
+    transition: width .3s;
+}
+
+.left h2:hover::after {
+    width: 100%;
+    /* //transition: width .3s; */
+}
+
+.right ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.right ul div {
+    cursor: pointer;
+}
+
+.right ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+.right ul li:hover {
+    color: #6e57e0;
+}
+
+.small-device-content {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+}
+
+.small-device-content.slide-in {
+   
+    display: block;
+    max-height: 500px;
+}
+
+.menu-container {
+    padding: 20px;
+
+}
+
+.hide {
+    display: none;
+}
+
+
+.slide-out {
+    transform: translateY(-100);
+}
+
+.small-device-content ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.small-device-content ul li {
+    cursor: pointer;
+}
+
+.small-device-content ul li:hover {
+    color: #6e57e0;
+}
+
+
+
+@media (max-width:980px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .right ul li {
+        display: none;
+    }
+
+    .sticky {
+        max-width: 80%;
+    }
+
+    /* Styles for screens larger than 768px */
+    @media (min-width: 980px) {
+        .small-device-content {
+            display: none;
+        }
+    }
+
+
+}

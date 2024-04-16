@@ -1,0 +1,39 @@
+.grid-element {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .grid-element h3 {
+    margin-top: 0;
+  }
+  
+  .grid-element p.collapsed {
+    max-height: 60px; /* Max height for collapsed content */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .grid-element p.expanded {
+    max-height: none; /* Show full content when expanded */
+    transition: max-height 0.3s ease;
+  }
+  
+  .item-list {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .item-list li{
+    line-height: 3;
+  }
+
+  .left-grid-element{
+    /* line-height: 0.89; */
+    flex: 1;
+  }
+
+  .left-grid-element h3{
+    font-size: 1.4rem;
+  }
