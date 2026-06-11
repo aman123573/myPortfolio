@@ -28,9 +28,11 @@ const AboutPage = () => {
           </section>
           <section>
             <a
+              href="/Aman_Kumar_Resume.pdf"
+              download
+              target="_blank"
               rel="noopener noreferrer"
-              target='_blank'
-              href='https://drive.google.com/file/d/1my9I8vlVgIyEz1cfC9WuQYtUfkWeXaIM/view?usp=drive_link' download>
+            >
               <Button>Download CV {<FileDownloadOutlinedIcon />}</Button></a>
           </section>
 
