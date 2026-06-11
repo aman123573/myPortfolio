@@ -1,5 +1,10 @@
 .contact__section{
-    margin: 18vh;
+    margin: 18vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
 .contact__head{

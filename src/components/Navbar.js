@@ -77,7 +77,7 @@ const Navbar = () => {
     <>
       <div className={`navbar-section ${darkMode ? 'light-mode' : 'dark-mode'}`} id='navbar'>
         <div className="left">
-          <h2>Aman</h2>
+          <h2 className=''>Aman</h2>
         </div>
         <div className="right">
           <ul>

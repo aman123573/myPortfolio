@@ -9,13 +9,13 @@ const SkillsPage = () => {
   const frontendskills = ['HTML', 'CSS', 'JavaScript', 'Tailwind'];
   const frontendskillsprogress = [70, 50, 60, 30];
 
-  const reactskills = ['Components', 'State', 'ContextApi', 'Router'];
-  const reactskillsprogress = [80, 70, 50, 20];
+  const reactskills = ['React Js', 'Spring Boot', 'Jdbc', 'Servlet'];
+  const reactskillsprogress = [50, 40, 80, 80];
 
   const databaseskills = ['MongoDB', 'MySql'];
   const databaseskillsprogress = [20, 60];
 
-  const otherskills = ['C/C++', 'DSA', 'Github'];
+  const otherskills = ['Java', 'DSA', 'Github'];
   const otherskillsprogress = [80, 50, 30];
 
 
@@ -36,7 +36,7 @@ const SkillsPage = () => {
             progress={frontendskillsprogress}
           />
           <SkillContent
-            title="React Js"
+            title="Framework"
             content="Less than 1 year"
             items={reactskills}
             progress={reactskillsprogress}

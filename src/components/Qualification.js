@@ -7,114 +7,94 @@ const Qualification = () => {
 
     // const { darkMode } = useTheme();
 
-    const [activeTab, setActiveTab] = useState('education');
+  const [activeTab, setActiveTab] = useState("education")
 
-    const handleTabClick = (tabId) => {
-        setActiveTab(tabId);
-    };
+  
 
+  const educationData = [
+    {
+      title: "Computer Science Engineer(GPA:7.41)",
+      institution: "CMR Institute of Technology, Bengaluru",
+      period: "2020-2024",
+    },
+    {
+      title: "Higher Secondary(77%)",
+      institution: "RNP Public School",
+      period: "2017-2019",
+    },
+    {
+      title: "Secondary Education(GPA:10.0)",
+      institution: "Chapra Central School",
+      period: "2016-2017",
+    },
+  ]
 
-    return (
-        <>
+  const internshipData = [
+    {
+      title: "Frontend Developer",
+      institution: "Tech Corp Inc.",
+      period: "2023-Present",
+    },
+    {
+      title: "Web Development Intern",
+      institution: "Digital Solutions Ltd",
+      period: "2022-2023",
+    },
+    {
+      title: "UI/UX Design Intern",
+      institution: "Creative Agency",
+      period: "2022",
+    },
+  ]
 
-            <section name='qualification' className="qualification__section">
-                <div className="qualification__head">
-                    <h2 className="section__title">Qualification</h2>
-                    <span className="section__subtitle">My Personal journey</span>
+  return (
+    <div className="app-container">
+      
+      <div className="qualification-section">
+        <h2 className="section-title">Qualification</h2>
+        <p className="section-subtitle">My Personal Journey</p>
 
-                </div>
+        {/* Toggle Buttons */}
+        <div className="toggle-buttons">
+          <button
+            className={`toggle-btn ${activeTab === "education" ? "active" : ""}`}
+            onClick={() => setActiveTab("education")}
+          >
+            Education
+          </button>
+          <button
+            className={`toggle-btn ${activeTab === "internships" ? "active" : ""}`}
+            onClick={() => setActiveTab("internships")}
+          >
+            Internships
+          </button>
+        </div>
 
-                <div className="qualification__container container">
-                    <div className="qualification__tabs">
-                        <div className={`qualification__button button--flex ${activeTab === 'education' ? 'qualification__active' : ''}`} onClick={() => handleTabClick('education')} data-target="#education">
-                            <i className="uil uil-graduation-cap qualification__icon"></i>
-                            Education
-                        </div>
-                        <div className={`qualification__button button--flex ${activeTab === 'work' ? 'qualification__active' : ''}`} onClick={() => handleTabClick('work')} data-target="#work">
-                            <i className="uil uil-briefcase-alt qualification__icon"></i>
-                            Internships
-                        </div>
+        {/* Timeline */}
+        <div className="timeline-container">
+          <div className="timeline">
+            <div className="timeline-line"></div>
+            <div className="timeline-items">
+              {(activeTab === "education" ? educationData : internshipData).map((item, index) => (
+                <div key={index} className="timeline-item">
+                  <div className="timeline-dot"></div>
+                  <div className="timeline-content">
+                    <div className="timeline-info">
+                      <h3 className="timeline-title">{item.title}</h3>
+                      <p className="timeline-subtitle">{item.institution}</p>
                     </div>
-
-                    <div className="qualification__sections">
-
-                        <div className={`qualification__content ${activeTab === 'education' ? 'qualification__active' : ''} left_content`} data-content="" id="education">
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-                            <div className="qualification__data">
-                                <h3 className="qualification__title">
-                                    Computer Science Engineer(GPA:7.41)
-                                </h3>
-                                <span className="qualification__subtitle">CMR Institute of Technology, Bengaluru</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    2020-2024
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className={`qualification__content ${activeTab === 'education' ? 'qualification__active' : ''} right_content`} data-content="" id="education">
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-
-                            <div className="qualification__data">
-
-                                <h3 className="qualification__title">
-                                    Higher Secondary(77%)
-                                </h3>
-                                <span className="qualification__subtitle">RNP Public School</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    2017-2019
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div className={`qualification__content ${activeTab === 'education' ? 'qualification__active' : ''} left_content`} data-content="" id="education">
-
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-
-                            <div className="qualification__data">
-
-                                <h3 className="qualification__title">
-                                    Secondary Educatin(GPA:10.0)
-                                </h3>
-                                <span className="qualification__subtitle">Chapra Central School</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    2016-2017
-                                </div>
-
-                            </div>
-                        </div>
-                        <div className={`qualification__content ${activeTab === 'work' ? 'qualification__active' : ''}`} data-content="" id="work">
-
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification__line"></span>
-
-                            <div className="qualification__data">
-
-                                <h3 className="qualification__title">
-                                    Web Development Intern
-                                </h3>
-                                <span className="qualification__subtitle">Prodigy InfoTech</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calendar-alt"></i>
-                                    Feb,2024-March,2024
-                                </div>
-
-                            </div>
-                        </div>
+                    <div className="timeline-date">
+                      <p>{item.period}</p>
                     </div>
-
-
+                  </div>
                 </div>
-            </section>
-        </>
-    )
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Qualification

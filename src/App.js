@@ -37,7 +37,7 @@ function App() {
 
   return (
 
-    <div className={`${darkMode ? 'light-mode' : 'dark-mode'}`}>
+    <div className={`${darkMode ? 'light-mode' : 'dark-mode'} main-container`} >
       <Navbar />
       <Element name='frontpage'>
         <FrontPage />
@@ -49,7 +49,7 @@ function App() {
       </Element>
       <Element name='skillpage'>
         <SkillPage />
-
+        
       </Element>
       <Element name='qualificationpage'>
         <Qualification />

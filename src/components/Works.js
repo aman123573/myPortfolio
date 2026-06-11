@@ -28,7 +28,7 @@ const workSlides = [
 
 const Works = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-
+  
 
   const prevClickHandler = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? workSlides.length - 1 : prevIndex - 1))

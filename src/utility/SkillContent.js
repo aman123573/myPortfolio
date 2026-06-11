@@ -3,10 +3,11 @@ import { ExpandLess, ExpandMore } from "@mui/icons-material"
 import { IconButton, LinearProgress } from "@mui/material"
 // import { makeStyles } from "@mui/styles";
 // import DataObjectOutlinedIcon from '@mui/icons-material/DataObjectOutlined';
+// import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 import HtmlOutlinedIcon from '@mui/icons-material/HtmlOutlined';
-import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
 import StorageOutlinedIcon from '@mui/icons-material/StorageOutlined';
 import LaptopOutlinedIcon from '@mui/icons-material/LaptopOutlined';
+import DeveloperModeIcon from '@mui/icons-material/DeveloperMode';
 
 // import { useTheme } from "../ThemeContext";
 
@@ -35,8 +36,8 @@ const SkillContent = ({ title, content, items, progress }) => {
         if (title === 'Frontend development') {
             return <HtmlOutlinedIcon sx={{ color: '#6e57e0' }} />
         }
-        else if (title === 'React Js') {
-            return <CodeOutlinedIcon sx={{ color: '#6e57e0' }} />
+        else if (title === 'Framework') {
+            return <DeveloperModeIcon sx={{ color: '#6e57e0' }} />
         }
         else if (title === 'Databases') {
             return <StorageOutlinedIcon sx={{ color: '#6e57e0' }} />
