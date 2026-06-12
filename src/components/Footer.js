@@ -11,35 +11,35 @@ const Footer = () => {
 
         <div className="first__section">
           <h1>Aman Kumar</h1>
-          <p>Frontend Developer</p>
+          <p>FullStack Developer</p>
         </div>
         <div className="second__section">
           <div className="items">
             <ul>
               <li>
                 <Instagram
-                  style={{ color: "red" , backgroundColor:"white",borderRadius:"10px"}}
+                  style={{ color: "red", backgroundColor: "white", borderRadius: "10px" }}
                   className="my-icon" // add custom class name
                 />
                 <Link to="https://www.instagram.com/amankumar7974?igsh=bjQ0bHM5azlqZHoz" target='_blank'>Instagram</Link>
               </li>
               <li>
                 <Twitter
-                  style={{ color: "skyblue", backgroundColor:"white",borderRadius:"10px" }}
+                  style={{ color: "skyblue", backgroundColor: "white", borderRadius: "10px" }}
                   className="my-icon"
                 />
                 <Link to="https://twitter.com/AmanKum28759185" target='_blank'>Twitter</Link>
               </li>
               <li>
                 <LinkedIn
-                  style={{ color: "#0366c3", backgroundColor:"white",borderRadius:"10px" }}
+                  style={{ color: "#0366c3", backgroundColor: "white", borderRadius: "10px" }}
                   className="my-icon"
                 />
                 <Link to="https://www.linkedin.com/in/aman-kumar-aaa409215/" target='_blank'>Linkedin</Link>
               </li>
               <li>
                 <GitHub
-                  style={{ color: "gray", backgroundColor:"white",borderRadius:"10px" }}
+                  style={{ color: "gray", backgroundColor: "white", borderRadius: "10px" }}
                   className="my-icon"
                 />
 

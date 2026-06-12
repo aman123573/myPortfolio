@@ -2,7 +2,7 @@ import ChevronLeftOutlinedIcon from '@mui/icons-material/ChevronLeftOutlined';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 import Button from '../utility/Button';
 
-import img1 from '../utility/images/work1.png'
+import img1 from '../utility/images/job-tracker.png'
 import img2 from '../utility/images/Screenshot (215).png'
 
 import './Works.css';
@@ -17,9 +17,9 @@ const workSlides = [
   },
   {
     img: img1,
-    title: 'Movie Management',
-    description: 'A CRUD application for movie recommendation.',
-    link: "https://github.com/aman123573/Movie-Managament-System/tree/master"
+    title: 'Job Tracker',
+    description: 'A Full stack application to track your job applications.',
+    link: "https://amank-portfolio.vercel.app"
   },
 ]
 
@@ -28,7 +28,7 @@ const workSlides = [
 
 const Works = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  
+
 
   const prevClickHandler = () => {
     setActiveIndex((prevIndex) => (prevIndex === 0 ? workSlides.length - 1 : prevIndex - 1))

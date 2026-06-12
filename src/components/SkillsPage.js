@@ -6,17 +6,17 @@ import './SkillsPage.css';
 const SkillsPage = () => {
 
   //list of items for different skills
-  const frontendskills = ['HTML', 'CSS', 'JavaScript', 'Tailwind'];
-  const frontendskillsprogress = [70, 50, 60, 30];
+  const frontendskills = ['React.js', 'React Native', 'CSS', 'JavaScript', 'HTML'];
+  const frontendskillsprogress = [70, 30, 50, 60, 80];
 
-  const reactskills = ['React Js', 'Spring Boot', 'Jdbc', 'Servlet'];
-  const reactskillsprogress = [50, 40, 80, 80];
+  const reactskills = ['Node.js', 'Express.js', 'REST APIs', 'WebSocket'];
+  const reactskillsprogress = [50, 50, 80, 40];
 
-  const databaseskills = ['MongoDB', 'MySql'];
-  const databaseskillsprogress = [20, 60];
+  const databaseskills = ['MongoDB', 'PostGreSQL', 'Redis'];
+  const databaseskillsprogress = [20, 60, 70];
 
-  const otherskills = ['Java', 'DSA', 'Github'];
-  const otherskillsprogress = [80, 50, 30];
+  const otherskills = ['Vercel', 'Github', 'Postman'];
+  const otherskillsprogress = [80, 30, 80];
 
 
 
@@ -30,26 +30,26 @@ const SkillsPage = () => {
         </div>
         <div className="grid-container">
           <SkillContent
-            title="Frontend development"
+            title="Frontend"
             content="More than 1 year"
             items={frontendskills}
             progress={frontendskillsprogress}
           />
           <SkillContent
-            title="Framework"
-            content="Less than 1 year"
+            title="Backend"
+            content="More than 1 year"
             items={reactskills}
             progress={reactskillsprogress}
           />
           <SkillContent
             title="Databases"
-            content="Less than 1 year"
+            content="More than 1 year"
             items={databaseskills}
             progress={databaseskillsprogress}
           />
           <SkillContent
-            title="Others"
-            content="More than 2 year"
+            title="Cloud & Tools"
+            content="More than 1 year"
             items={otherskills}
             progress={otherskillsprogress}
           />

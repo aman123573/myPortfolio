@@ -3,11 +3,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 8rem;
 }
 
 .works__head {
     text-align: center;
-    line-height: 0.89;
+    line-height: 0.9;
+    gap: 2rem;
+}
+
+.section__title { 
+    margin: 1rem;
+    font-size: 2rem;
 }
 
 .works__head span {

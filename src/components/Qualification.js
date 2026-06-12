@@ -5,15 +5,15 @@ import './Qualification.css'
 
 const Qualification = () => {
 
-    // const { darkMode } = useTheme();
+  // const { darkMode } = useTheme();
 
   const [activeTab, setActiveTab] = useState("education")
 
-  
+
 
   const educationData = [
     {
-      title: "Computer Science Engineer(GPA:7.41)",
+      title: "Computer Science Engineer(GPA:7.54)",
       institution: "CMR Institute of Technology, Bengaluru",
       period: "2020-2024",
     },
@@ -31,27 +31,22 @@ const Qualification = () => {
 
   const internshipData = [
     {
-      title: "Frontend Developer",
-      institution: "Tech Corp Inc.",
-      period: "2023-Present",
+      title: "Junior Software Developer",
+      institution: "Faspi Enterprises",
+      period: "May 2025-May 2026",
     },
     {
       title: "Web Development Intern",
-      institution: "Digital Solutions Ltd",
+      institution: "Prodigy",
       period: "2022-2023",
-    },
-    {
-      title: "UI/UX Design Intern",
-      institution: "Creative Agency",
-      period: "2022",
     },
   ]
 
   return (
     <div className="app-container">
-      
+
       <div className="qualification-section">
-        <h2 className="section-title">Qualification</h2>
+        <h2 className="section-title">Qualification/Work Experience</h2>
         <p className="section-subtitle">My Personal Journey</p>
 
         {/* Toggle Buttons */}
@@ -66,7 +61,7 @@ const Qualification = () => {
             className={`toggle-btn ${activeTab === "internships" ? "active" : ""}`}
             onClick={() => setActiveTab("internships")}
           >
-            Internships
+            Experience
           </button>
         </div>
 

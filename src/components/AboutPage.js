@@ -18,11 +18,11 @@ const AboutPage = () => {
 
       <div className="flex justify-around my-20">
         <div className={`w-[30%] ${darkMode ? 'purple-color' : 'black-color'}`}>
-          Web developer,having a quite knowledge on frontend skills. Doing BTech in CSE and have a lots of experience in developing projects. Learning React Js as my next skill and looking further to explore more in this field.
+          I'm a Full Stack Developer with 1+ years of professional experience building scalable web and mobile applications. I specialize in React, React Native, Node.js, Express, PostgreSQL, and Redis, with hands-on experience developing real-time systems, financial applications, REST APIs, and cloud-deployed solutions.
         </div>
         <div className="about_intro_experience_main">
           <section className="about_intro_experience">
-            <div className="experience_years"><h2>02+</h2>Years of project experience</div>
+            <div className="experience_years"><h2>01+</h2>Years Professional Experience</div>
             <div className="projects_count"><h2>15+</h2>Completed Projects</div>
             <div className="internships_count"><h2>01</h2>Internship completed</div>
           </section>
