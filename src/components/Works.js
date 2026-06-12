@@ -19,7 +19,7 @@ const workSlides = [
     img: img1,
     title: 'Job Tracker',
     description: 'A Full stack application to track your job applications.',
-    link: "https://amank-portfolio.vercel.app"
+    link: "https://job-tracker-client-eight.vercel.app"
   },
 ]
 
